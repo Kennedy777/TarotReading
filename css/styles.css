@@ -1,0 +1,43 @@
+#title {
+    background-image: url("../img/giphy.gif");
+    padding-left: 300px;
+    padding-bottom: 150px;
+}
+#bottom{
+    background-image: url("../img/giphy.gif");
+    margin-top: 260px;
+    padding-top: 10px;
+}
+#pictarot {
+  margin-left: 360px;
+}
+
+#backcard {
+  margin-left: 280px;
+  font-family: fantasy;
+}
+
+#title2 {
+  text-align: center;
+  font-family: fantasy;
+}
+
+
+.boxmodel-2 a {
+  margin-left: 450px;
+  font-size: 40px;
+  font-family: Times,inherit;
+  color: white;
+  }
+
+.boxmodel-2 a:hover{
+    color: violet;
+    text-decoration: underline;
+  }
+
+  .boxmodel-2 p {
+    margin-left: 370px;
+    font-size: 20px;
+    font-family: Times,inherit;
+    color: white;
+    }

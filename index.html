@@ -1,26 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Tarot Card Reading: Group Project</title>
+    <title>Tarot</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
   </head>
   <body>
- <div class=container>
-    <div class="center" id="">
-      <h1>Click here for your three-card reading!</h1>
-      <button id="forCards"  type="submit" class="button"><img src="img/PLACEHOLDER.JPEG"></button>
-     </div>
-       <!--start reading (result) div here-->
-  <div class="myReading"  id="reading">
-    <!--make table? columns?-->
+    <div class="jumbotron" id="title">
+      <div class="container">
+      </div>
+    </div>
+    <h1 id="title2">Madame Codus's Tarot</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Blabla</h3><br>
+          <p>Tarot readings are a powerful form of divination that use an ancient deck of cards to help you find answers to your most important questions about love, relationships, your career, finances and more. Psychics and fortune tellers have used Tarot cards for hundreds of years, and Trusted Tarot will give you an accurate reading that's personalized based the cards you choose and the order you pick them. Every card has a different meaning depending on its position, so you will get a unique and detailed perspective on your current situation. To prepare for your reading, I recommend that you listen to this grounding excercise - then scroll down and select your cards.</p><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><img src="img/tarot.jpeg" id="pictarot" alt="Picture of an squelet" height="400px"></p><br><br>
+          <p>Tarot readings are a powerful form of divination that use an ancient deck of cards to help you find answers to your most important questions about love, relationships, your career, finances and more. Psychics and fortune tellers have used Tarot cards for hundreds of years, and Trusted Tarot will give you an accurate reading that's personalized based the cards you choose and the order you pick them. Every card has a different meaning depending on its position, so you will get a unique and detailed perspective on your current situation. To prepare for your reading, I recommend that you listen to this grounding excercise - then scroll down and select your cards.</p><br><br>
+          <h4> Please click on the cards to have you Tarot Reading</h4><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="backcard">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Past</h3><br>
+          <button id="toggle-fading"><p><img src="img/backCard.png" height="350px" id="img1"></p></button>
+        </div>
+        <div class="col-md-4">
+          <h3>Present</h3><br>
+          <button id="toggle-fading2"><p><img src="img/backCard.png" height="350px" id="img2"></p></button>
+        </div>
+        <div class="col-md-4">
+          <h3>Future</h3><br>
+          <button id="toggle-fading3"><p><img src="img/backCard.png" height="350px" id=img3></p></button>
+        </div>
+      </div>
+    </div>
 
-    <!--close reading div here-->
-  </div>
-
-   <!--close container div-->
-     </div>
-    </body>
-  </html>
+    <div class="boxmodel-2" id="bottom">
+      <div class="container">
+        <div clas="row">
+          <div class="col-md-12">
+            <a href="#contact.html">Contact</a><br><br>
+            <p>Copyright :https://www.darktarot.com/</p>s
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
