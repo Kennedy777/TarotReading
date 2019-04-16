@@ -12,11 +12,10 @@ function Card (id, image, fortune) {
   this.fortune = fortune;
 }
 
-
 //Shuffle cards
 
 
-var cards = []; //Contains the cards that we take from the beginning of the shuffled deck
+var pickCards = []; //Contains the cards that we take from the beginning of the shuffled deck
 
 function shuffle (deck) {
   var i = 0,
@@ -29,18 +28,10 @@ function shuffle (deck) {
     deck[i] = deck[j]
     deck[j] = temp
   }
-  cards = (deck.slice(0,3)); //Set empty cards array to the array sliced from the first 3 elements of the newly shuffled deck, because "slice" takes the elements between the two indices up to but NOT including the final index (e.g., 3 in this case)
+  pickCards = (deck.slice(0,3)); //Set empty cards array to the array sliced from the first 3 elements of the newly shuffled deck, because "slice" takes the elements between the two indices up to but NOT including the final index (e.g., 3 in this case)
 };
 
-
-
-
-
-
-
-
-
-
+////Notes ----
 
 // Attempt to select 3 random cards
 
@@ -79,10 +70,3 @@ function shuffle (deck) {
 //   }
 //   return deck;
 // }
-
-function shuffle(deck) {
-  var i=deck.length;
-  while (i--) {
-    yield deck.splice(Math.floor(Math.random() * (i+1)), 1)[0];
-  }
-}
