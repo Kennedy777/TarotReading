@@ -13,24 +13,29 @@ var array1= [""]
 
 // User Logic
 $(document).ready(function() {
-  var justice = "img/temperance.png"
-  var game = true;
+
+  var firstCard= "img/temperance.png"
+  var secondCard= "img/death.png"
+  var thirdCard= "img/theFool.png"
   var taille = "350px";
 
-  $("#imgSA").html("<img src=" + justice + " height="+ taille +">");
+  $("#imgReading1").html("<img src=" + firstCard+ " height="+ taille +">");
+  $("#imgReading2").html("<img src=" + secondCard + " height="+ taille +">");
+  $("#imgReading3").html("<img src=" + thirdCard + " height="+ taille +">");
 
 
 
-  $("#toggle-fading").click(function() {
-    $(this).find("img").toggle(200);
-  });
+  $("#toggle-fading1").click(function() {
+    $(this).find("#img1").fadeOut(5);
+    $("#imgReading1").show();
+   });
   $("#toggle-fading2").click(function() {
-    $(this).find("img").toggle(200);
-  });
+    $(this).find("#img2").fadeOut(5);
+    $("#imgReading2").show();
+   });
   $("#toggle-fading3").click(function() {
-    $(this).find("#img3").fadeOut(100);
-    $("#imgSA").show();
-
+    $(this).find("#img3").fadeOut(5);
+    $("#imgReading3").show();
    });
 
 

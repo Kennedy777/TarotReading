@@ -43,13 +43,19 @@
     color: white;
     }
 
+#imgReading1 {
+  display: none;
+}
 
+#imgReading2 {
+  display: none;
+}
 
-#imgSA {
+#imgReading3{
   display: none;
 }
 
 #newReading {
   margin-top: 200px;
-  margin-left: 40%;
+  margin-left: 43%;
 }
