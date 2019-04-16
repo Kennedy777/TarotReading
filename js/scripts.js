@@ -29,7 +29,11 @@ function shuffle (deck) {
     deck[j] = temp
   }
   pickCards = (deck.slice(0,3)); //Set empty cards array to the array sliced from the first 3 elements of the newly shuffled deck, because "slice" takes the elements between the two indices up to but NOT including the final index (e.g., 3 in this case)
+   pastPosition = pickCards[0];
+   presentPosition = pickCards[1];
+   futurePosition = pickCards[2];
 };
+
 
 ////Notes ----
 
