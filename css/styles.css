@@ -42,3 +42,14 @@
     font-family: Times,inherit;
     color: white;
     }
+
+
+
+#imgSA {
+  display: none;
+}
+
+#newReading {
+  margin-top: 200px;
+  margin-left: 40%;
+}
