@@ -13,8 +13,9 @@
 }
 
 #backcard {
-  margin-left: 280px;
+
   font-family: fantasy;
+  text-align: center;
 }
 
 #title2 {
@@ -36,7 +37,7 @@
   }
 
   .boxmodel-2 p {
-    margin-left: 370px;
+    text-align: center;
     font-size: 20px;
     font-family: Times,inherit;
     color: white;
