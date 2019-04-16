@@ -12,12 +12,13 @@ function Card (id, image, fortune) {
 }
 
 
-
-
-
 // Creating new cards dynamically
 
-function selectCard(){
+var cards = [];
+
+function selectCards(){
+for (var i=0; i<3; i++) {
 var cardNumber = Math.floor((Math.random() * 20) + 1 );
-return deck[cardNumber];
+cards.push(deck[cardNumber]);
+}
 };
