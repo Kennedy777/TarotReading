@@ -1,13 +1,13 @@
 var deck = [];
 
-function Card (index, image, fortune) {
-  this.index = index;
+function Card (id, image, fortune) {
+  this.id = id;
   this.image = image;
   this.fortune = fortune;
 }
 
   for (var i=1; i<21; i++) {
-    deck.push(new Card(i, "a", "b"));
+    deck.push(new Card(i, "img#"+i, "fortune#"+i));
   };
 
 let card1 = new Card(0, "img", "fortune")
@@ -22,7 +22,7 @@ function selectCard{
 
 // Creating new cards dynamically
 card {
-  this.image = "img#"
+  this.image = "img#2"
 }
 
 card2.index = 2
