@@ -1,3 +1,5 @@
+
+$(document).ready(function() {
 //Back end Logic
 
 // Constructor of the Game
@@ -7,18 +9,6 @@ function Card (id, image, fortune) {
   this.fortune = fortune;
 }
 
-
-//Shuffle cards
-
-
-
-// User Logic
-$(document).ready(function() {
-
-  //
-  // var firstCard= "img/temperance.png"
-  // var secondCard= "img/death.png"
-  // var thirdCard= "img/theFool.png"
   var taille = "350px";
   //Empty deck of cards
   var deck = [];
@@ -94,10 +84,10 @@ $(document).ready(function() {
   deck[21].fortune = "Lorem ipsum dolor sit amet, consectetur adipisicing elit";
 
   var pickCards = []; //Contains the cards that we take from the beginning of the shuffled deck
-  var pastPosition2;
+  var pastPosition;
   var presentPosition;
   var futurePosition;
-
+//function to shuffle the cards
   function shuffle (deck) {
     var i = 0,
         j = 0,
@@ -109,19 +99,21 @@ $(document).ready(function() {
       deck[j] = temp
     }
       pickCards = (deck.slice(0,3)); //Set empty cards array to the array sliced from the first 3 elements of the newly shuffled deck, because "slice" takes the elements between the two indices up to but NOT including the final index (e.g., 3 in this case)
-      pastPosition2 = pickCards[0];
+      pastPosition = pickCards[0];
       presentPosition = pickCards[1];
       futurePosition = pickCards[2];
   };
-
+// Call the function
 shuffle(deck);
 
-  $("#imgReading1").html("<img src=" + pastPosition2.image+ " height="+ taille +">");
+// User Logic
+
+// Add an Image inside the div
+  $("#imgReading1").html("<img src=" + pastPosition.image+ " height="+ taille +">");
   $("#imgReading2").html("<img src=" + presentPosition.image+ " height="+ taille +">");
   $("#imgReading3").html("<img src=" + futurePosition.image + " height="+ taille +">");
 
-
-
+// Click Function to hide the backcard and show a random image
   $("#toggle-fading1").click(function() {
     $(this).find("#img1").fadeOut(5);
     $("#imgReading1").show();
@@ -134,7 +126,4 @@ shuffle(deck);
     $(this).find("#img3").fadeOut(5);
     $("#imgReading3").show();
    });
-
-
-
 });
