@@ -1,15 +1,11 @@
-
-$(document).ready(function() {
-//Back end Logic
-
-// Constructor of the Game
+//
 function Card (id, image, fortune) {
   this.id = id;
   this.image = image;
   this.fortune = fortune;
 }
 
-  var taille = "350px";
+
   //Empty deck of cards
   var deck = [];
   // Creating new cards dynamically
@@ -17,6 +13,7 @@ function Card (id, image, fortune) {
     deck.push(new Card(i, "img#"+i, "fortune#"+i));
   };
 
+//Cards' images and corresponding fortunes
   deck[0].image = "img/death.png";
   deck[0].fortune ="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
@@ -87,7 +84,8 @@ function Card (id, image, fortune) {
   var pastPosition;
   var presentPosition;
   var futurePosition;
-//function to shuffle the cards
+
+//Function to shuffle the cards
   function shuffle (deck) {
     var i = 0,
         j = 0,
@@ -97,36 +95,38 @@ function Card (id, image, fortune) {
       temp = deck[i]
       deck[i] = deck[j]
       deck[j] = temp
-    }
-      pickCards = (deck.slice(0,3)); //Set empty cards array to the array sliced from the first 3 elements of the newly shuffled deck, because "slice" takes the elements between the two indices up to but NOT including the final index (e.g., 3 in this case)
+    } //Select first 3 cards from shuffled deck to tell past, present, future
+      pickCards = (deck.slice(0,3));
       pastPosition = pickCards[0];
       presentPosition = pickCards[1];
       futurePosition = pickCards[2];
   };
-// Call the function
+
+var height = "350px";
+// User Logic
+$(document).ready(function() {
+
 shuffle(deck);
 
-// User Logic
-
 // Add an Image inside the div
-  $("#imgReading1").html("<img src=" + pastPosition.image+ " height="+ taille +">");
-  $("#imgReading2").html("<img src=" + presentPosition.image+ " height="+ taille +">");
-  $("#imgReading3").html("<img src=" + futurePosition.image + " height="+ taille +">");
+  $("#imgReading1").html("<img src=" + pastPosition.image+ " height="+ height+">");
+  $("#imgReading2").html("<img src=" + presentPosition.image+ " height="+height+">");
+  $("#imgReading3").html("<img src=" + futurePosition.image + " height="+height+">");
 
-// Click Function to hide the backcard and show a random image
+// Click Function to hide the backcard and show a random image + corresponding fortune
   $("#toggle-fading1").click(function() {
     $(this).find("#img1").fadeOut(5);
     $("#imgReading1").show();
-    $("#fortune1").append(pastPosition.fortune);
+    $("#fortune1").text(pastPosition.fortune);
    });
   $("#toggle-fading2").click(function() {
     $(this).find("#img2").fadeOut(5);
     $("#imgReading2").show();
-    $("#fortune2").append(presentPosition.fortune);
+    $("#fortune2").text(presentPosition.fortune);
    });
   $("#toggle-fading3").click(function() {
     $(this).find("#img3").fadeOut(5);
     $("#imgReading3").show();
-    $("#fortune3").append(futurePosition.fortune);
+    $("#fortune3").text(futurePosition.fortune);
    });
 });
