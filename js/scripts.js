@@ -75,13 +75,13 @@ function Card (id, image, fortune) {
   deck[18].fortune="Lorem ipsum dolor sit amet, consectetur adipisicing elit";
 
   deck[19].image ="img/theWorld.png";
-  deck[19].fortune="Lorem ipsum dolor sit amet, consectetur adipisicing elit";
-
+  deck[19].fortune="Lorem ipsum"
   deck[20].image ="img/wheelOfFortune.png";
   deck[20].fortune="Lorem ipsum dolor sit amet, consectetur adipisicing elit";
 
   deck[21].image ="img/theEmperor.png";
   deck[21].fortune = "Lorem ipsum dolor sit amet, consectetur adipisicing elit";
+
 
   var pickCards = []; //Contains the cards that we take from the beginning of the shuffled deck
   var pastPosition;
@@ -117,13 +117,16 @@ shuffle(deck);
   $("#toggle-fading1").click(function() {
     $(this).find("#img1").fadeOut(5);
     $("#imgReading1").show();
+    $("#fortune1").append(pastPosition.fortune);
    });
   $("#toggle-fading2").click(function() {
     $(this).find("#img2").fadeOut(5);
     $("#imgReading2").show();
+    $("#fortune2").append(presentPosition.fortune);
    });
   $("#toggle-fading3").click(function() {
     $(this).find("#img3").fadeOut(5);
     $("#imgReading3").show();
+    $("#fortune3").append(futurePosition.fortune);
    });
 });
