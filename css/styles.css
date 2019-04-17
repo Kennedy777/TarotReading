@@ -5,7 +5,7 @@
 }
 #bottom{
     background-image: url("../img/giphy.gif");
-    margin-top: 260px;
+    margin-top: 50px;
     padding-top: 10px;
 }
 #pictarot {
@@ -23,7 +23,9 @@
 #title2 {
   text-align: center;
   font-family: fantasy;
+  font-size: 70px;
 }
+
 
 
 .boxmodel-2 a {
