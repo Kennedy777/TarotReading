@@ -37,4 +37,4 @@ _Contact Kennedy777, zebede15, or sabrinamianne on Github_
 
 *{This software is licensed under the GPL license}*
 
-Copyright (c) 2019 **_{Marguerite Kennedy, Sabrina Mianne, and Zema Kebede_**
+Copyright (c) 2019 **_Marguerite Kennedy, Sabrina Mianne, and Zema Kebede_**
