@@ -2,7 +2,7 @@
 
 #### A simple three-card tarot reading
 
-#### By **Marguerite Kennedy, Sabrina Mianne, Zema Kebede, Anna Gibbons**
+#### By **Marguerite Kennedy, Sabrina Mianne, Zema Kebede**
 
 ## Description
 
@@ -63,4 +63,4 @@ _Email no one with any questions, comments, or concerns._
 
 *{This software is licensed under the MIT license}*
 
-Copyright (c) 2019 **_{Marguerite Kennedy, Sabrina Mianne, Zema Kebede, Anna Gibbons}_**
+Copyright (c) 2019 **_{Marguerite Kennedy, Sabrina Mianne, Zema Kebede}_**
