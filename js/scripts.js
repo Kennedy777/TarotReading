@@ -1,4 +1,6 @@
-//
+//Back End Logic
+
+//Constructor of the Tarot Game
 function Card (id, image, fortune) {
   this.id = id;
   this.image = image;
@@ -8,6 +10,7 @@ function Card (id, image, fortune) {
 
   //Empty deck of cards
   var deck = [];
+
   // Creating new cards dynamically
   for (var i=1; i<23; i++) {
     deck.push(new Card(i, "img#"+i, "fortune#"+i));
@@ -110,8 +113,9 @@ function Card (id, image, fortune) {
       futurePosition = pickCards[2];
   };
 
-var height = "350px";
+
 // User Logic
+var height = "350px";
 $(document).ready(function() {
 
 shuffle(deck);
