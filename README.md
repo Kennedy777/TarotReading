@@ -11,41 +11,15 @@ Welcome to Madame Codus's parlor! The user will be asked to think of a situation
 
 ### Specs
 
-UI -
-
-The user will click on the card deck image on the landing page, which will randomly generate three tarot cards with corresponding messages for what that card may indicate about the given situation.
-Use constructor functions to create a sample card that others will be a prototype of.
-
-We will initially have a "deck" of 20 cards. Each will have an image and a message that goes with it.
-
-Upon clicking, the initial image with the card deck will be hidden, and replaced by the card and message for "Past," "Present," and "Future" for each.
-
-If time permits, we will create functionality for cards to be "turned over" upon clicking, and revealed one at a time instead of in a spread of three.
-
-Select "cards" for images and size appropriately.
-Create corresponding brief text for each card generated (e.g., "This indicates a time when you felt optimistic and powerful")
-
-
-// BUSINESS LOGIC
-
-Create an array with a deck of cards, based on a constructor that includes image and text properties. 
-
-Create a randomizer that will output three cards in the following three positions: PAST, PRESENT and FUTURE.
-
-For each of positions, output an IMAGE of a card, along with the corresponding information about that card.
-
-As with a real deck, each card should occur only ONE time in each reading.
-
-
-
-
-
+1. User can click any card to turn it over and reveal both the card face and associated fortune
+2. User can click the 'New Tarot Reading' button to receive a new set of cards
+3. User will never receive duplicate cards during a reading
+4. Cards will be selected randomly each time to mimic a shuffled deck of 22 cards
 
 ## Setup/Installation Requirements
 
-1. Open browser
-2. Navigate to github.io/ PLACEHOLDER
-3. Enjoy!
+1. Clone github repository
+2. Open index.html in browser
 
 ## Known Bugs
 * No known bugs at this time.
@@ -53,14 +27,14 @@ As with a real deck, each card should occur only ONE time in each reading.
 ## Technologies Used
  * JavaScript
  * Bootstrap
-  * CSS
-  * HTML
+ * Jquery
+
 ## Support and contact details
 
-_Email no one with any questions, comments, or concerns._
+_Contact Kennedy777, zebede15, or sabrinamianne on Github_
 
 ### License
 
-*{This software is licensed under the MIT license}*
+*{This software is licensed under the GPL license}*
 
-Copyright (c) 2019 **_{Marguerite Kennedy, Sabrina Mianne, Zema Kebede}_**
+Copyright (c) 2019 **_{Marguerite Kennedy, Sabrina Mianne, and Zema Kebede_**
