@@ -18,8 +18,9 @@ Welcome to Madame Codus's parlor! The user will be asked to think of a situation
 
 ## Setup/Installation Requirements
 
-1. Clone github repository
-2. Open index.html in browser
+1. Open https://kennedy777.github.io/TarotReading/ in any browser to play!  
+2. OR, clone github repository at https://kennedy777.github/TarotReading/
+   Open index.html in browser
 
 ## Known Bugs
 * No known bugs at this time.
